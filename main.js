@@ -76,7 +76,7 @@ $(document).ready(
         var attivaImmagine = $('img.active');
         var immaginePrecedente = attivaImmagine.prev();
         var cerchioAttivato = $('.nav > i.active');
-        var immaginePrecedente = cerchioAttivato.prev();
+        var cerchioPrecedente = cerchioAttivato.prev();
             if (attivaImmagine.hasClass('first') == true && cerchioAttivato.hasClass('first') == true) {
                 immaginePrecedente = $('img.last');
                 immaginePrecedente = $('i.last');
@@ -103,5 +103,3 @@ $(document).keydown(
         }
       }
     );
-}
-);
