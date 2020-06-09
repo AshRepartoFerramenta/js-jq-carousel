@@ -1,21 +1,27 @@
-//imposto il comando di reset
+//imposto il comando di reset jquery
 $(document).ready(
   function() {
-            //Imposto una variabile che esegua l' immagine successiva
-            var immagineSuccessivaDestra = $('.next');
-            // Cliccando sulla freccia destra vado all'immagine successiva
-            immagineSuccessivaDestra.click(
+            // Imposto la condizione che :"Cliccando sulla freccia destra vado all'immagine successiva"
+            $('.next').click(
                 function() {
-              slideNext();
+                immagineSuccessivaDestra();
             }
         );
-            //Imposto una variabile che esegua l'immagine precedente
-            var immaginePrecedenteSinistra = $('.prev');
-            // Cliccando sulla freccia destra vado all'immagine successiva
-            immaginePrecedenteSinistra.click(
+            // Imposto la condizione che :"Cliccando sulla freccia sinistra vado all'immagine precedente"
+            $('.prev').click(
                 function() {
-              slidePrev();
+                immagineSuccessivaSinistra();
             }
         );
     }
 );
+
+//Imposto le funzioni di movimento delle slides a destra e il cerchio attivo/spento
+function immagineSuccessivaDestra(){
+    var immagineAttuale = $('.images img.active');
+    var cerchioSlide = $('.nav i.active');
+
+    immagineAttuale.removeClass('active');
+    cerchioSlide.removeClass('active');
+
+}
