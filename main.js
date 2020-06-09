@@ -47,6 +47,7 @@ $(document).ready(
       slidePrecedente();
     });
 
+
 // Impostate le condizioni generali di funzione,assegno i comandi relativi all'attivazione
 //e disattivazione delle slides e dei bottoni,aggiungendo e rimuovendo le classi.
 
@@ -103,3 +104,5 @@ $(document).keydown(
         }
       }
     );
+}
+);
